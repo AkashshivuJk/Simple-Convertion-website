@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Conversion Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+        .block {
+            background-color: #f5f5f5;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+        .block h2 {
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Conversion Tool</h1>
+    </header>
+    <nav>
+
+        <a href="/Users/akash/Desktop/web1/templates/page1.html">About</a>
+    </nav>
+    <div class="container">
+        <div class="block">
+            <h2>What you want to do?</h2>
+            <a href="{{ url_for('nur2_page') }}"><button>Mp4 to Mp3</button></a>
+            <a href="{{ url_for('nur3_page') }}"><button>MP3 to Text</button></a>
+            <a href="{{ url_for('nur4_page') }}"><button>Text to Speech</button></a>
+            <!-- <a href="{{ url_for('nur2_page') }}"><button>Mp4 to Text</button></a> -->
+        </div>
+    </div>
+    <footer>
+        &copy; 2023 My Conversion Tool. All rights reserved.
+    </footer>
+</body>
+</html>
